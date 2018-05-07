@@ -10,6 +10,7 @@ function array_by_frequecny($array){
 	$cnt = 0;
 	$array_n = array_count_values($array);
 	arsort($array_n);
+	print_r($array_n);
 	foreach($array_n as $k => $v){
 			for($i = 0; $i < $v; $i++){
 				$new[] = $k;
